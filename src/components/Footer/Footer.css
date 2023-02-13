@@ -1,0 +1,25 @@
+.footer {
+    background-color: #2d3e50;
+    display: flex;
+    flex-direction: row;
+    height: 88px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__text {
+    font-size: 14px;
+    color: white;
+    margin-left: 45px;
+    font-weight: 400;
+}
+
+.footer__button {
+    background: no-repeat center url(../../images/arrow.png);
+    background-color: #16a086;
+    border: none;
+    margin-right: 45px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}

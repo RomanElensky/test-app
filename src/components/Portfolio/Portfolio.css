@@ -1,0 +1,142 @@
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio__title {
+    color: #444444;
+    font-size: 28px;
+    margin: 54px 0 0 0;
+    font-weight: 400;
+}
+
+.portfolio__text {
+    color: #444444;
+    font-size: 16px;
+    margin: 10px 0 0 0;
+    font-weight: 400;
+}
+
+.portfolio__filter {
+    margin-top: 36px;
+    gap: 15px;
+    display: flex;
+}
+
+.portfolio__button {
+    border: none;
+    background-color: #1bbc9b;
+    padding: 13px;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.portfolio__button:focus {
+    background-color: #16a086;
+}
+
+.portfolio__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 34px 68px;
+    margin-top: 45px;
+    margin-bottom: 61px;
+}
+
+.portfolio__item {
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+}
+
+.item1 {
+    background: url(../../images/img-1.png) top center no-repeat;
+    position: relative;
+    z-index: 9999;
+}
+
+.item1:hover {
+    background: url(../../images/search.png) center no-repeat, url(../../images/Background.png) center no-repeat, url(../../images/Ellipse\ 1.png) center no-repeat, url(../../images/img-1.png) no-repeat;
+}
+
+.item2 {
+    background: url(../../images/img-2.png) top center no-repeat;
+    position: relative;
+    z-index: 9999;
+}
+
+.item2:hover {
+    background: url(../../images/search.png) center no-repeat, url(../../images/Background.png) center no-repeat, url(../../images/Ellipse\ 1.png) center no-repeat, url(../../images/img-2.png) no-repeat;
+}
+
+.item3 {
+    background: url(../../images/img-3.png) top center no-repeat;
+    position: relative;
+    z-index: 9999;
+}
+
+.item3:hover {
+    background: url(../../images/search.png) center no-repeat, url(../../images/Background.png) center no-repeat, url(../../images/Ellipse\ 1.png) center no-repeat, url(../../images/img-3.png) no-repeat;
+}
+
+.item4 {
+    background: url(../../images/img-4.png) top center no-repeat;
+    position: relative;
+    z-index: 9999;
+}
+
+.item4:hover {
+    background: url(../../images/search.png) center no-repeat, url(../../images/Background.png) center no-repeat, url(../../images/Ellipse\ 1.png) center no-repeat, url(../../images/img-4.png) no-repeat;
+}
+
+.item5 {
+    background: url(../../images/img-5.png) top center no-repeat;
+    position: relative;
+    z-index: 9999;
+}
+
+.item5:hover {
+    background: url(../../images/search.png) center no-repeat, url(../../images/Background.png) center no-repeat, url(../../images/Ellipse\ 1.png) center no-repeat, url(../../images/img-5.png) no-repeat;
+}
+
+.item6 {
+    background: url(../../images/img-6.png) top center no-repeat;
+    position: relative;
+    z-index: 9999;
+}
+
+.item6:hover {
+    background: url(../../images/search.png) center no-repeat, url(../../images/Background.png) center no-repeat, url(../../images/Ellipse\ 1.png) center no-repeat, url(../../images/img-6.png) no-repeat;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 950px) {
+    .portfolio__container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .portfolio__container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .portfolio__filter {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .portfolio__button {
+        padding: 8px;
+    }
+}
